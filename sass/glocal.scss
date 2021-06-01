@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'mixin';
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-image: url('../img/susha.jpeg');
+
+    @include respond(phone){
+        background-size: cover;
+        background-position: center;
+    }
+}
